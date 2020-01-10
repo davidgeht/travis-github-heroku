@@ -1,12 +1,10 @@
---- 
-deploy: 
-  api_key: 
-    secure: 
-      gPf8i9wl6QcXyCJwVURsE7ym7cxp8JX1Xyg8Eqlf/h/xhs/njlB4EE+6KqwnUEpBAppkpzX14kQd2+M6yzDoQSfjrcsaumd/hUSjs06Jv+mw8VzAD+K+252Sy1jRzRkAbTClflIJXMqDsX0TJawFWJ3MxJrJo9mxuGSnuKnjTa7ZJAIcKGsvsx6+ksnGF3SICsk+MApUYghha7SNTzOs9/GBhATjt/okbeFR1luqsz5ke8g/COixrCiLEhv7fG48neCEOa5tuLcWy/qBvgFcQBNTsGVUhoWIMLup7/6iB6kgtEUGdjtcL8BLpIFKDH64jCQUam6Kccim/D8pAKVw0xhBeOkdI1BiaYPsfmmA8zn2NPk42ahgPfG+/+82wN2Yz+7VDfle0iHKpF5jFj7MxPxiKLVklUDtA0/r3upQ4xdnKuBaBKsU5zZccoytDuhmO2FAiu/4YLOIISYZmh98fFq3KbiuW6EWosIb289tXb9x0R3GJHxQwfkzoUErT/RQC+A5lpewNn6RPcomFrGKSxf6bvpwsBgK085SlSxMvvBKAMyy5XuL3xu8eo2FA1AGBnYb01CRWt0ycOWJQjPlBhu9OUJY337c0BeusAHQbqkS+SScLRTgVkJvFgrHGD3yUAqx/KjaY5HsA5pneOgQb4XqnhswODeOc/fAaEe5itw=: ~
-  app: 
-    calm-lake-79598: ~
-  provider: heroku
-  true: "repo:davigeht/travis-github-heroku"
 language: node_js
-node_js: 
-  - stable
+node_js:
+- stable
+deploy:
+  provider: heroku
+  api_key:
+    secure: gPf8i9wl6QcXyCJwVURsE7ym7cxp8JX1Xyg8Eqlf/h/xhs/njlB4EE+6KqwnUEpBAppkpzX14kQd2+M6yzDoQSfjrcsaumd/hUSjs06Jv+mw8VzAD+K+252Sy1jRzRkAbTClflIJXMqDsX0TJawFWJ3MxJrJo9mxuGSnuKnjTa7ZJAIcKGsvsx6+ksnGF3SICsk+MApUYghha7SNTzOs9/GBhATjt/okbeFR1luqsz5ke8g/COixrCiLEhv7fG48neCEOa5tuLcWy/qBvgFcQBNTsGVUhoWIMLup7/6iB6kgtEUGdjtcL8BLpIFKDH64jCQUam6Kccim/D8pAKVw0xhBeOkdI1BiaYPsfmmA8zn2NPk42ahgPfG+/+82wN2Yz+7VDfle0iHKpF5jFj7MxPxiKLVklUDtA0/r3upQ4xdnKuBaBKsU5zZccoytDuhmO2FAiu/4YLOIISYZmh98fFq3KbiuW6EWosIb289tXb9x0R3GJHxQwfkzoUErT/RQC+A5lpewNn6RPcomFrGKSxf6bvpwsBgK085SlSxMvvBKAMyy5XuL3xu8eo2FA1AGBnYb01CRWt0ycOWJQjPlBhu9OUJY337c0BeusAHQbqkS+SScLRTgVkJvFgrHGD3yUAqx/KjaY5HsA5pneOgQb4XqnhswODeOc/fAaEe5itw=
+  app: calm-lake-79598
+  on: 
+  repo: davigeht/travis-github-heroku
